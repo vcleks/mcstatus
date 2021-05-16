@@ -46,8 +46,8 @@ async def players(ctx):
 @bot.command(name='info', description='Info on the server')
 async def info(ctx):
     embed = discord.Embed(title="Mc Status", color=0x1fab96)
-    embed.add_field(name="Vanilla Server IP", value="`mc.leks.dev`", inline=False)
-    embed.add_field(name="Modded Server IP", value="`54.39.64.29:25573`", inline=False)
+    embed.add_field(name="Vanilla Server IP", value="`SERVERIP`", inline=False)
+    embed.add_field(name="Modded Server IP", value="`SERVERIP`", inline=False)
     embed.set_footer(text="Requested by {0}".format(ctx.message.author))
     await ctx.send(embed=embed)
 
