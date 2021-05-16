@@ -14,12 +14,12 @@ with open('config.json') as f:
 bot = commands.Bot(command_prefix=PREFIX, case_insensitive=True)
 
 # vanilla
-vanilla = MinecraftServer("pvt.ghost-serverlabs.cf", 35565)
+vanilla = MinecraftServer("SERVERIP", PORT)
 vanillastatus = vanilla.status()
 vanillaquery = vanilla.query()
 
 # Modded
-modded = MinecraftServer("54.39.64.29", 25573)
+modded = MinecraftServer("SERVERIP", PORT)
 moddedstatus = modded.status()
 moddedquery = modded.query()
 
